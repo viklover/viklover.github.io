@@ -22,7 +22,13 @@ body {
     display: inline-block;
     text-align: left;
     position: fixed;
+    transition: 500ms;
 }
+
+.menu__item:hover {
+    margin: 15px;
+}
+
 .menu__href {
     text-decoration: none;
     margin: 15px;
