@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="styles/me_section.css">
+</head>
+<body>
+
+    <section class="me">
+        <div class="flexbox">
+            <div class="selfie">
+                <div class="photo"></div>
+                <div class="blur"></div>
+            </div>
+            <div class="info">
+                <h1 class="name">Mihail Vorobyev</h1>
+                <p class="under">Student of <a href="https://ekat.ithub.ru/">ITHub College</a></p>
+                <!--                    <div class="button">-->
+                <!--                        <p>Обо мне</p>-->
+                <!--                    </div>-->
+            </div>
+        </div>
+        <div class="blur mw-laptop"></div>
+    </section>
+
+    <section class="showcase">
+        <h2>My projects</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active" style="
+                            --pw-image-url: url('../images/projects/testplatform_preview.png');
+                            --pw-icon-url: url('../images/projects/test_platform.ico')
+                        ">
+                    <div class="frame">
+                        <div class="blur"></div>
+                        <div class="preview-photo"></div>
+                        <div class="container">
+                            <div class="info">
+                                <div class="icon"></div>
+                                <h3 class="name">Test Platform</h3>
+                                <p class="description">
+                                    Python Django project. Each user has the ability to create and pass other peoples tests.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button button-link"
+                             data-link="https://github.com/viklover/TestPlatform">
+                            <p>Go to repository</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="
+                            --pw-image-url: url('../images/projects/photo.png');
+                            --pw-icon-url: url('../images/projects/nozhik_square.png')
+                        ">
+                    <div class="frame">
+                        <div class="blur"></div>
+                        <div class="preview-photo"></div>
+                        <div class="container">
+                            <div class="info">
+                                <div class="icon"></div>
+                                <h3 class="name">Rebellious Century</h3>
+                                <p class="description">
+                                    Pages were created by a team of five students. It was a thesis in history
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button button-link"
+                             data-link="https://github.com/viklover/RebelliousCentury">
+                            <p>Go to repository</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="area active">
+                    <div class="point">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="area">
+                    <div class="point">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <header>
+            <input id="searchProject" type="search" placeholder="Поиск">
+            <div class="tags">
+                <div class="tag" data-value="frontend">
+                    Frontend
+                </div>
+                <div class="tag" data-value="backend">
+                    Backend
+                </div>
+                <div class="tag" data-value="layout">
+                    Layout
+                </div>
+                <div class="tag" data-value="programs">
+                    Programs
+                </div>
+                <div class="tag" data-value="hackathon">
+                    Hackathon
+                </div>
+            </div>
+        </header>
+
+        <div class="list">
+            <div class="project button-link backend programs" data-link="https://github.com/viklover/home-python3" style="
+                --pw-image-url: url('../images/projects/home_preview.png');
+                --pw-icon-url: url('../images/projects/home.ico')
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Home</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link backend programs" data-link="https://github.com/viklover/home-desktop-client" style="
+                --pw-image-url: url('../images/projects/img.png');
+                --pw-icon-url: url('../images/projects/home.ico');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Home - Desktop Client</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link backend frontend layout" data-link="https://github.com/viklover/TestPlatform" style="
+                --pw-image-url: url('../images/projects/testplatform_preview.png');
+                --pw-icon-url: url('../images/projects/test_platform.ico');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Test Platform</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link frontend layout" data-link="https://github.com/viklover/RebelliousCentury" style="
+                --pw-image-url: url('../images/projects/photo.png');
+                --pw-icon-url: url('../images/projects/nozhik_square.png');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Rebellious Century</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link backend hackathon" data-link="https://github.com/viklover/hackathon-java" style="
+                --pw-image-url: url('../images/projects/img_1.png');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Hackathon (Java)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link backend programs" data-link="https://github.com/viklover/harris-set-time" style="
+                --pw-icon-url: url('../images/projects/clock_white.ico');
+                --pw-image-url: url('../images/projects/home_preview.png');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Harris Set Time</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project button-link backend programs" data-link="https://github.com/viklover/checker-dca" style="
+                --pw-icon-url: url('../images/projects/checker_dca.ico');
+                --pw-image-url: url('../images/projects/img_2.png');
+            ">
+                <div class="body">
+                    <div class="blur"></div>
+                    <div class="preview-photo"></div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="icon"></div>
+                            <h3 class="name">Checker DCA</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/button-links.js"></script>
+    <script src="slider/slider.js"></script>
+
+    <script src="js/tags.js"></script>
+
+    <script src="js/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+@media(min-width: 320px)
+{
+  .me {
+    padding: 15px 0 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #15181C;
+
+    .flexbox {
+      display: flex;
+      flex-direction: column;
+
+      .selfie {
+        position: relative;
+
+        .photo {
+          height: 342px;
+          width: 188px;
+          margin: auto;
+          background-image: url('../images/selfie.png');
+          background-size: cover;
+        }
+
+        .blur {
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          height: 100px;
+          width: 100%;
+          background: rgb(253,253,255);
+          background: linear-gradient(180deg, rgba(253,253,255,0) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+        }
+      }
+
+      a:visited {
+        color: white;
+      }
+    }
+
+    .info {
+      background-color: black;
+      padding-bottom: 40px;
+
+      h1 {
+        margin: 8px 0;
+      }
+
+      .under {
+        margin: 0;
+      }
+
+      .button {
+        height: 37px;
+        width: 130px;
+        background-color: #292929;
+        border: 2px solid white;
+        border-radius: 7px;
+        margin: 20px auto 0;
+        transition: 0.15s;
+        cursor: pointer;
+
+        p {
+          margin: 8px 0;
+          font-weight: normal;
+        }
+
+        :hover {
+          background-color: white;
+          border: 2px solid black;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .mw-laptop {
+    display: none;
+  }
+}
+
+@media(min-width: 768px)
+{
+  .me {
+    position: relative;
+
+    .flexbox {
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 25px;
+      width: 500px;
+      margin: auto;
+      text-align: left;
+
+      .info {
+        background-color: transparent;
+      }
+    }
+
+    .selfie {
+      .blur {
+        display: none;
+      }
+    }
+
+    .info {
+      position: relative;
+      padding-bottom: 0;
+      width: 270px;
+      margin-top: 50px;
+
+      .name {
+        font-size: 30px;
+      }
+
+      .button {
+        position: absolute;
+        width: 210px;
+        bottom: 30px;
+        text-align: center;
+        z-index: 1;
+      }
+    }
+  }
+
+  .mw-laptop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: rgb(253,253,255);
+    background: linear-gradient(180deg, rgba(253,253,255,0) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  }
+}
+

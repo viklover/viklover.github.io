@@ -1,0 +1,114 @@
+@media (min-width: 320px) {
+  .me {
+    padding: 15px 0 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #15181C;
+  }
+  .me .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .me .flexbox .selfie {
+    position: relative;
+  }
+  .me .flexbox .selfie .photo {
+    height: 342px;
+    width: 188px;
+    margin: auto;
+    background-image: url("../images/selfie.png");
+    background-size: cover;
+  }
+  .me .flexbox .selfie .blur {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: rgb(253, 253, 255);
+    background: linear-gradient(180deg, rgba(253, 253, 255, 0) 0%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%);
+  }
+  .me .flexbox a:visited {
+    color: white;
+  }
+  .me .info {
+    background-color: black;
+    padding-bottom: 40px;
+  }
+  .me .info h1 {
+    margin: 8px 0;
+  }
+  .me .info .under {
+    margin: 0;
+  }
+  .me .info .button {
+    height: 37px;
+    width: 130px;
+    background-color: #292929;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: 20px auto 0;
+    transition: 0.15s;
+    cursor: pointer;
+  }
+  .me .info .button p {
+    margin: 8px 0;
+    font-weight: normal;
+  }
+  .me .info .button :hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+  .mw-laptop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .me {
+    position: relative;
+  }
+  .me .flexbox {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 25px;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+  }
+  .me .flexbox .info {
+    background-color: transparent;
+  }
+  .me .selfie .blur {
+    display: none;
+  }
+  .me .info {
+    position: relative;
+    padding-bottom: 0;
+    width: 270px;
+    margin-top: 50px;
+  }
+  .me .info .name {
+    font-size: 30px;
+  }
+  .me .info .button {
+    position: absolute;
+    width: 210px;
+    bottom: 30px;
+    text-align: center;
+    z-index: 1;
+  }
+  .mw-laptop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: rgb(253, 253, 255);
+    background: linear-gradient(180deg, rgba(253, 253, 255, 0) 0%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%);
+  }
+}
+
+/*# sourceMappingURL=me_section.css.map */
